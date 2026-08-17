@@ -12,6 +12,7 @@
 - 프로젝트 목적과 개발 순서 기록
 - 공개 저장소 보안 기본 설정
 - 개발 일지 구조 만들기
+- 개인 기술 블로그 구축
 
 ### 완료한 작업
 
@@ -21,6 +22,14 @@
 - `.env.example` 추가
 - 프로젝트 개요 문서 추가
 - 개발 일지 문서 추가
+- `Katts2/dev-blog` 공개 저장소 생성
+- Astro 기반 개인 기술 블로그 초기 구조 생성
+- Cloudflare Pages와 GitHub 저장소 연결
+- 기본 Pages 주소 `dev-blog-5jp.pages.dev` 배포
+- 커스텀 도메인 `blog.mongku.org` 연결
+- SSL 활성화 확인
+- 첫 번째 개발 글 작성
+- 두 번째 개발 글 `GitHub와 Cloudflare Pages로 개발 블로그 만들기` 작성
 
 ### 프로젝트 개발 순서
 
@@ -32,6 +41,32 @@
 ```
 
 각 단계는 실제 구현과 테스트가 끝난 뒤 다음 단계로 이동합니다.
+
+### 기록 구조
+
+```text
+실제 개발
+   ↓
+GitHub 프로젝트 저장소
+   ↓
+개발 일지 원본
+   ↓
+개인 기술 블로그
+   ↓
+Reddit 진행상황 공유
+```
+
+### 블로그 구조
+
+```text
+Markdown
+   ↓
+GitHub dev-blog
+   ↓
+Cloudflare Pages
+   ↓
+https://blog.mongku.org
+```
 
 ### 오늘 배운 내용
 
@@ -53,14 +88,13 @@ Git이 추적하거나 GitHub에 올리지 않아야 할 파일을 지정합니�
 
 실제 비밀값은 넣지 않고 프로그램이 어떤 환경변수를 필요로 하는지만 보여주는 예시 파일입니다.
 
-예:
+#### Cloudflare Pages
 
-```env
-DATABASE_URL=CHANGE_ME
-JWT_SECRET=CHANGE_ME
-```
+GitHub 저장소의 소스를 빌드해 정적 웹사이트로 배포하는 데 사용합니다. `main` 브랜치에 변경사항이 올라가면 블로그가 자동으로 다시 배포되도록 구성했습니다.
 
-실제 값이 들어간 `.env` 파일은 공개 저장소에 올리지 않습니다.
+#### Custom Domain
+
+Cloudflare Pages 기본 주소 대신 `blog.mongku.org`를 블로그의 정식 주소로 사용합니다.
 
 ### 보안 주의사항
 
@@ -76,6 +110,9 @@ JWT_SECRET=CHANGE_ME
 
 ### 현재 상태
 
+- GitHub 기록 환경: **완료**
+- 개인 기술 블로그: **완료**
+- Reddit 기록 환경: **다음 작업**
 - 0단계 개발 기록 환경: **진행 중**
 - 1단계 보스타이머: 대기
 - 2단계 아이템 경매: 대기
@@ -83,10 +120,9 @@ JWT_SECRET=CHANGE_ME
 
 ### 다음 작업
 
-1. 개인 블로그 기록 방식 결정 및 준비
-2. Reddit 기록 방식 준비
-3. 0단계 완료 확인
-4. OCI AMD 서버 확인부터 보스타이머 인프라 구축 시작
+1. Reddit 기록 방식 준비
+2. 0단계 완료 확인
+3. OCI AMD 서버 확인부터 보스타이머 인프라 구축 시작
 
 ---
 
