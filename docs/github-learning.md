@@ -59,3 +59,11 @@ GitHub 웹사이트가 아니라 내 컴퓨터에서 Git을 사용하기 시작�
 
 - git clone
 - git status
+ 
+## Git Pull
+
+GitHub의 최신 변경사항을 내 컴퓨터로 가져옵니다.
+
+### 배운 명령어
+
+- git pull
