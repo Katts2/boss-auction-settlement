@@ -27,3 +27,26 @@ docs/
 ├── github-learning.md
 ├── 00-project-overview.md
 └── 01-development-log.md
+```
+
+## Commit
+
+파일의 변경 사항을 하나의 저장 지점으로 기록합니다.
+
+## 현재 배운 것
+
+- Repository 만들기
+- README 수정하기
+- Markdown 작성하기
+- Commit 만들기
+- Commit History 확인하기
+- 폴더와 파일 만들기
+
+## 다음에 배울 것
+
+- Git Clone
+- Git Add
+- Git Commit
+- Git Push
+- Git Pull
+- Branch
