@@ -50,3 +50,12 @@ docs/
 - Git Push
 - Git Pull
 - Branch
+
+## Local Git
+
+GitHub 웹사이트가 아니라 내 컴퓨터에서 Git을 사용하기 시작했습니다.
+
+### 배운 명령어
+
+- git clone
+- git status
